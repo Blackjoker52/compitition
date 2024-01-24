@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(27, 22, 43);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 0.5em;
+    padding: 1em;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    padding: 0.75em 1.5em;
+    border-radius: 0.5em;
+    display: inline-block;
+    transition-duration: 200ms;
+}
+.nav-link:hover {
+    background-color: rgba(146, 146, 255, 0.4);
+
+}
+
+.main {
+    height: 100vh;
+    max-height: 100vh;
+    display: flex; flex-direction: column;
+}
+
+.home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 8rem;
+}
+
+.home img {
+    max-width: 40%;
+}
+
+.hero-content {
+    width: 100%;
+    display: flex; flex-direction: column;
+    align-items: start;
+    gap: 2em;
+}
+.hero-content .arrow{
+    position: relative;
+    left: 2rem;
+    top: 1rem;
+    width: 8rem;
+}
+
+.hero-content h1 {
+    font-weight: 400;
+    font-size: 3rem;
+    color: rgb(230, 230, 230);
+    line-height: 1.25em;
+}
+.hero-content p {
+    color: rgba(226, 220, 255, 0.692);
+}
+
+.gradient-text {
+    background: linear-gradient(to right, rgb(193, 126, 255), rgb(176, 236, 255));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    font-weight: 500;
+}
+
+.btn-primary{
+    padding: 1em 1.5em;
+    /* background: linear-gradient(to right, rgb(216, 119, 255), rgb(114, 128, 255)); */
+    background-color: #5c5cff;
+    border: none;
+    outline: none;
+    border-radius: 100px;
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    border-top: 1px solid #9797ff;
+
+}
+.btn-primary:hover {
+    background-color: #6262ff;
+}
